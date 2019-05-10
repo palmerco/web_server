@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Announcing Version 2.0
+title:      Hi Sean and Shelby. I messed something up with the last file
 date:       2015-07-11
 summary:    Now, Pixyll is lighter weight and more customizable than before.
 categories: jekyll pixyll
