@@ -2,7 +2,7 @@
 layout: post
 title: This is My First Post's title
 date: 2019-05-05 19:22
-summary: Pixyll is available to you under the MIT license.
+summary: Is Cody finally understanding how this stuff works?
 categories: jekyll pixyll
 ---
 <!-- this language is called markdown. I think? -->
