@@ -2,6 +2,7 @@
 title:       "Cody Palmer"
 email:       cody@palmer.engineering
 author:      Cody Palmer
+highlighter: rouge
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
 url:         "http://github-palmerco.github.io"
