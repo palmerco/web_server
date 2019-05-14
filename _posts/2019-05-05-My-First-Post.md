@@ -28,4 +28,4 @@ Let me try this with a colon:
 [^2]: Linking a website <https://www.gnu.org/philosophy/free-sw.en.html>.
 
 
-What about this
+What about this2 
