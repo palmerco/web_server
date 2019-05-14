@@ -1,7 +1,7 @@
 # Site settings
-title:       Temp
-email:       your_email@example.com
-author:      John Otander
+title:       Cody Palmer
+email:       cody@palmer.engineering
+author:      Cody Palmer
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
 url:         "http://github-palmerco.github.io"
@@ -32,7 +32,7 @@ enable_anchorjs: false
 post_preview_image: false
 
 # Facebook Page integration
-# (for instant articles and other stuff)
+# (for instant articles and other stuff)
 fb_page: false
 fb_page_id:
 
