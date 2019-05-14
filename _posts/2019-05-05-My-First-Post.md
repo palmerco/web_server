@@ -16,6 +16,8 @@ This is how to **bold** a word
 
 - This is how you create a bullet point
 
+Let me try this with a colon:
+
     Indenting a line
     Copyright (c) 2014-2019 John Otander for Pixyll
 
