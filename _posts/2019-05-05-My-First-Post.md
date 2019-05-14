@@ -4,7 +4,7 @@ title: My First Post
 date: 2019-05-05 19:22
 summary: Is Cody finally understanding how this stuff works?
 categories: jekyll pixyll
-permalink: /MY-First-Post/
+permalink: "/MY-First-Post/"
 ---
 <!-- this language is called markdown. I think? -->
 
