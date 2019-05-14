@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is My First Post's title
+title: My First Post
 date: 2019-05-05 19:22
 summary: Is Cody finally understanding how this stuff works?
 categories: jekyll pixyll
