@@ -1,6 +1,6 @@
 # Site settings
 title:       Temp2
-email:       cody@palmer.engineering
+email:       your_email@example.com
 author:      Cody Palmer
 highlighter: rouge
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
