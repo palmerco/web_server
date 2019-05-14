@@ -26,8 +26,8 @@ Let me try this with a colon:
 
 Adding a website here <https://www.gnu.org/philosophy/free-sw.en.html>
 
-[^1]: Creating an enumerated list.
-[^2]: Linking a website.
-[^3]: This is stupid if you need three to show up.
+1. Creating an enumerated list.
+2. Linking a website.
+3. This is stupid if you need three to show up.
 
 What about this 3
