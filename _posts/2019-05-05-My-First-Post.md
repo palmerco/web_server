@@ -26,6 +26,6 @@ Let me try this with a colon:
 
 [^1]: Creating an enumerated list.
 [^2]: Linking a website <https://www.gnu.org/philosophy/free-sw.en.html>.
+[^3]: This is stupid if you need three to show up.
 
-
-What about this2 
+What about this 3
