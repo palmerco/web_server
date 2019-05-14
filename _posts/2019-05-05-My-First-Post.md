@@ -23,6 +23,7 @@ Let me try this with a colon:
 
 <!-- creating a solid line is the three dashes below -->
 ---
+
 [^1]: Creating an enumerated list
 [^2]: Linking a website <https://www.gnu.org/philosophy/free-sw.en.html>.
 
