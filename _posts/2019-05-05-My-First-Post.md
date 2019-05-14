@@ -8,7 +8,7 @@ categories: jekyll pixyll
 <!-- this language is called markdown. I think? -->
 
 Each MD file in the _posts folder is purely text that is populated in the layout, which 
-is assigned in the front-matter
+is assigned in the front-matter of this md file
 
 ## This is how to bold a section with larger font
 
@@ -24,8 +24,10 @@ Let me try this with a colon:
 <!-- creating a solid line is the three dashes below -->
 ---
 
+Adding a website here <https://www.gnu.org/philosophy/free-sw.en.html>
+
 [^1]: Creating an enumerated list.
-[^2]: Linking a website <https://www.gnu.org/philosophy/free-sw.en.html>.
+[^2]: Linking a website.
 [^3]: This is stupid if you need three to show up.
 
 What about this 3
