@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-Hello, and welcome to my website! My name is Cody Palmer, and I am an electrical engineer from Dayton, Ohio. 
+Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my home for the past 6 years. I earned a B.S. and M.S. in Electrical Engineering from Wright State University. While in college, I was fortunate enough to be a part of a life-changing internship at the Air Force Institute of Technology (AFIT), where I was directly involved in research regarding wireless communications. This internship helped pave the path for my current position as an electrical engineer at Dynetics Inc., where I research, model, and simulate radar systems.
 
 ---
 <blockquote>
