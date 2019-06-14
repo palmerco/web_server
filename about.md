@@ -5,7 +5,9 @@ permalink: /about/
 tags: about
 ---
 
-Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my home for the past 6 years. I earned a B.S. and M.S. in Electrical Engineering from Wright State University. While in college, I was fortunate enough to be a part of a life-changing internship at the Air Force Institute of Technology (AFIT), where I was directly involved in research regarding wireless communications. This internship helped pave the path for my current position as an electrical engineer at Dynetics Inc., where I research, model, and simulate radar systems.
+Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my home for the past 6 years. I am currently employed as an electrical engineering defense contractor with Dynetics Inc., which is where I research, model, and simulate radar systems. My interest in signals developed during my internship at the Air Force Institute Technology (AFIT), where I was directly involved in wireless communication research.
+Once my daily work is complete, you will most likely find me at a local coffee shop where all the baristas know me by name. I try to keep a healthy balance of work, socializing, and staying active (usually not a uniform distribution, but I try lol). 
+
 
 ---
 <blockquote>
