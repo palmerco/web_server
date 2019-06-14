@@ -7,7 +7,7 @@ tags: about
 
 ![pic icon](website_photo.jpg)
 
-<img src="web_server/website_photo.jpg" alt="image description">
+<img src="https://github.com/palmerco/web_server/blob/master/website_photo.jpg" alt="image description">
 
 	 
 	 test4website_photo.jpg
