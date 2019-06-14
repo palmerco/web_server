@@ -7,7 +7,7 @@ tags: about
 
 ![pic icon](websitePhoto.jpg)
 
-<img src="web_server/websitePhoto.jpg" alt="image description">
+<img src="web_server/websitePhoto.jpg" alt="image description" />
 
 	 
 	 test4website_photo.jpg new new 2
