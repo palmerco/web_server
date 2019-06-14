@@ -5,13 +5,14 @@ permalink: /about/
 tags: about
 ---
 
+![]{website_photo.png)
 
 <img src="website_photo.jpg" width = "100" align = "center">
 	 test
 	 
 	 
 	 
-	 test2
+	 test3
 	 
 Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my home for the past 6 years. I am currently employed as an electrical engineering defense contractor with Dynetics Inc., which is where I research, model, and simulate radar systems. My interest in signals developed during my internship at the Air Force Institute Technology (AFIT), where I was directly involved in wireless communication research.
 
