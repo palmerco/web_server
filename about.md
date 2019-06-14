@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-![]{website_photo.jpg)
+![pic icon]{website_photo.jpg)
 
 <img src="website_photo.jpg" width = "100" align = "center">
 	 test
