@@ -5,6 +5,7 @@ permalink: /about/
 tags: about
 ---
 
+![](website_photo.jpg =100x100)
 <img src="website_photo.jpg"
      alt="profile icon"
      align = "center"
