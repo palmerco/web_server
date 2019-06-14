@@ -7,7 +7,7 @@ tags: about
 
 ![pic icon](website_photo.jpg)
 
-<img src="website_photo.jpg" width = "100" align = "center">
+<img src="website_photo.jpg" alt="image description">
 	 test
 	 
 	 
