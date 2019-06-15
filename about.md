@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-
+![](websitePhoto.jpg =400x)
 
 <img src="https://github.com/palmerco/web_server/blob/master/images/websitePhoto.jpg" align = "center" width = "400" alt="image description" />
 
