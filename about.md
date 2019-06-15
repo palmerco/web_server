@@ -9,7 +9,6 @@ Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my
 
 Once my daily work is complete, you will most likely find me at a local coffee shop where all the baristas know me by name. I try to keep a healthy balance of work, socializing, and staying active (usually not a uniform distribution, but I try lol). 
 
-</p>
 
 ---
 <center>
