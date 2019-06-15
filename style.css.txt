@@ -1,5 +1,5 @@
 img{
-	width: 500%;
+	width: 10%;
 	margin: 1px auto;
 	display: block;
 }
