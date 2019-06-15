@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-<div class="img-profile"></div>
+<img src="/images/websitePhoto.jpg" alt="profilePicture" width="400" height="400" />
 
 
 	 
