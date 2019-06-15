@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-<img src="/images/websitePhoto.jpg" alt="profilePicture" width="400" align ="center"/>
+<img src="/images/websitePhoto.jpg" alt="profilePicture" width="400" align ="middle"/>
 
 
 	 
