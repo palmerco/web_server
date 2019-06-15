@@ -1,6 +1,0 @@
-.img-profile {
-	width : 400px;
-	height: 400px;
-	background-image: url("https://github.com/palmerco/web_server/blob/master/images/websitePhoto.jpg");
-	background-size: 100%;
-}

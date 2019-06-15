@@ -1,0 +1,5 @@
+img{
+	width: 50%;
+	margin: 1px auto;
+	display: block;
+}
