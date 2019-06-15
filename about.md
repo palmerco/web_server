@@ -7,7 +7,7 @@ tags: about
 
 ![pic icon](websitePhoto.jpg)
 
-<img src="https://github.com/palmerco/web_server/blob/master/images/websitePhoto.jpg" align = "center" width = "100" alt="image description" />
+<img src="https://github.com/palmerco/web_server/blob/master/images/websitePhoto.jpg" align = "center" width = "400" alt="image description" />
 
 	 
 	new new images directory w slash at end https
