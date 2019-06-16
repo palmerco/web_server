@@ -52,7 +52,7 @@ github_username:
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
+twitter_username: TheCodyPalmer
 skype_username:
 steam_nickname:
 google_plus_id:
@@ -69,7 +69,7 @@ vk_id:
 show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: false
-share_twitter: false
+share_twitter: true
 share_googleplus: false
 share_linkedin: true
 share_digg: false
