@@ -2,7 +2,7 @@
 layout: post
 title: My First Post!
 date: 2019-05-05 19:22
-summary: Without it
+summary: This post is not centered, but should be
 categories: jekyll pixyll
 permalink: "/:title/"
 ---
