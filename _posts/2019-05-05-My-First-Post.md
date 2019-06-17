@@ -2,7 +2,7 @@
 layout: post
 title: My First Post!
 date: 2019-05-05 19:22
-summary: Post Signature
+summary: Is Cody finally figuring things out?
 categories: jekyll pixyll
 permalink: "/:title/"
 ---
