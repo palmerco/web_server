@@ -8,3 +8,7 @@ tags: resume
 <p>
 Check out Cody's <a href="https://palmer.engineering/resume/Palmer_Resume.pdf">Resume</a>
 </p>
+
+{% if site.ajaxify_contact_form %}
+  {% include ajaxify_content_form.html %}
+{% endif %}
