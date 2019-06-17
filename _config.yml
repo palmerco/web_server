@@ -9,7 +9,7 @@ url:         "http://github-palmerco.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
+ #- contact.html
 
 # Google services
 google_verification:
