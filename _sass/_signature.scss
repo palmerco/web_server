@@ -4,15 +4,15 @@
 }
 
 .signature{
-  font-size: 1.25rem;
-  padding: 0.5em 0 0 0;
+  font-size: 1.0rem;
+  padding: 0.em 0 0 0;
   width: 100%;
 }
 
 .signature a.fa {
   cursor: pointer;
   opacity: 0.8;
-  padding: 0.2em;
+  padding: 0.9em;
 }
 
 .signature a.fa:hover {
@@ -21,5 +21,5 @@
 
 .signature iframe[title=Flattr] {
   position: relative;
-  top: 0.1em;
+  top: 0.0em;
 }
