@@ -14,7 +14,8 @@ tags: about
 
 </p>
 <p>
-Hi, I’m Cody! I am an electrical engineer from Dayton, Ohio, which has been my home for the past 6 years. I am currently employed as a defense contractor with Dynetics Inc., which is where I research, model, and simulate Radar and Electronic Warfare (EW) systems. My interest in signals developed during my internship at the Air Force Institute Technology (AFIT), where I was directly involved in wireless communication research.
+Hi, I’m Cody! I am an Electrical Engineer, and I live in Los Angeles, California. I am currently employed as a Principal Systems Engineeer at Northrop Grumman in Redondo Beach, CA. 
+
 </p>
 <p>
 Once my daily work is complete, you will most likely find me outdoors, at a local coffee shop, or working on a personal project. I try to keep a healthy balance of work, socializing, and staying active.
