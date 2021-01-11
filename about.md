@@ -15,11 +15,11 @@ tags: about
 </p>
 
 <p>
-Hi, I’m Cody! I am an Electrical Engineer living in Los Angeles, California. 
+Hi, I’m Cody! I am an electrical engineer living in Los Angeles, California. 
 </p>
 
 <p>
-I am a creative person who finds joy in learning and problem solving. Here's a short list of words that reflect my character: calculated, dillegent, collaborative, artistic, reliable, and organized.
+I am a creative person who finds joy in learning and problem solving. Here's a short list of words that reflect my character: calculated, diligent, collaborative, artistic, reliable, and organized.
 </p>
 
 <p>
