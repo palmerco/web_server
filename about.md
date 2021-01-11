@@ -23,7 +23,7 @@ I am a creative person who finds joy in learning and problem solving. Here's a s
 </p>
 
 <p>
-
+<span style="color:blue">some *blue* text</span>
 </p>
 
 
