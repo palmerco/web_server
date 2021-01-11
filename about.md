@@ -19,11 +19,12 @@ Hi, I’m Cody! I am an electrical engineer living in Los Angeles, California.
 </p>
 
 <p>
-I am a creative person who finds joy in learning and problem solving. Here's a short list of words that reflect my character: calculated, diligent, collaborative, artistic, reliable, and organized.
+I am a creative person who finds joy in learning and problem solving. Here's a short list of words that reflect my character: 
+<span style="color:#ff6347">  calculated, diligent, collaborative, artistic, reliable, and organized </span>. 
 </p>
 
 <p>
-<span style="color:blue">some *blue* text</span>
+
 </p>
 
 
