@@ -27,7 +27,7 @@ I am a creative person who finds joy in learning and problem solving. Here's a s
 <span style="color:#ff6347">  artistic </span>, 
 <span style="color:#ff6347">  reliable </span>, 
 and 
-<span style="color:#ff6347">  organized </span>, 
+<span style="color:#ff6347">  organized </span>.
 </p>
 
 <p>
