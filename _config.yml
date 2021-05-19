@@ -11,7 +11,7 @@ header_pages:
  - about.md
  - resume.html
  - contact.html
- - temp_subpage.html
+ - subpages/temp_subpage.html
 
 
 # Google services
