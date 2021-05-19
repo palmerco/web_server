@@ -9,9 +9,8 @@ url:         "http://github-palmerco.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - resume.html
- - contact.html
- - subpages/temp_subpage.html
+ - subpages/resume.html
+
 
 
 # Google services

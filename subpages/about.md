@@ -8,7 +8,7 @@ tags: about
 
 <!--<img src="/images/websitePhoto.jpg" alt="profilePicture" width="300" align="left" style="margin:0px 15px"/>-->
 
-<center><img src="/images/websitePhoto.jpg" alt="profilePicture" width="300" align="middle" style="float: middle; margin: 4px 10px 10px 10px; border: 2px solid #708090;"/></center>
+<center><img src="/files/images/websitePhoto.jpg" alt="profilePicture" width="300" align="middle" style="float: middle; margin: 4px 10px 10px 10px; border: 2px solid #708090;"/></center>
 
 <p>
 
