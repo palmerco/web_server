@@ -5,9 +5,6 @@ featured_img: /files/icon/apple-touch-icon-180x180.png
 {% assign posts_count = paginator.posts | size %}
 
 <div class="home">
- {% for post in site.posts %}
-   <img src="{% post.featured_img %}" />
- {% endfor %}
   {% if posts_count > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
