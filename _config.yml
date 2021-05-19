@@ -1,6 +1,6 @@
 # Site settings
 title:       "Cody Palmer"
-email:       cody@palmer.engineering
+email:       co.palmer.95@gmail.com
 author:      Cody Palmer
 highlighter: rouge
 description: "Creative platform for sharing ideas and growing professionally."
@@ -9,8 +9,9 @@ url:         "http://github-palmerco.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - contact.html
  - resume.html
+ - contact.html
+
 
 # Google services
 google_verification:
