@@ -6,7 +6,7 @@ featured_img: /files/icon/apple-touch-icon-180x180.png
 
 <div class="home">
  {% for post in site.posts %}
-   <img src="{% post.feature_img %}" />
+   <img src="{% post.featured_img %}" />
  {% endfor %}
   {% if posts_count > 0 %}
     <div class="posts">
