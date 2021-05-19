@@ -1,9 +1,13 @@
 ---
 layout: default
+featured_img: /files/icon/apple-touch-icon-180x180.png
 ---
 {% assign posts_count = paginator.posts | size %}
 
 <div class="home">
+ {% for post in site.posts %}
+   <img src="{% post.feature_img %}" />
+ {% endfor %}
   {% if posts_count > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
@@ -15,7 +19,7 @@ layout: default
 	      {{ post.date | date: "%b %-d, %Y" }}
 	    {% endif %}
 	  </p>
-          <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+          <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
           <span class="post-summary">
             {% if post.summary %}
               {{ post.summary }}
