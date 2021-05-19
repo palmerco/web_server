@@ -48,8 +48,9 @@
 }
 
 .featured-image-post {
-//width: 100%;
-//height: 192px;
-object-fit: cover;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 
 }
