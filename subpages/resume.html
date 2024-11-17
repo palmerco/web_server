@@ -17,12 +17,10 @@ tags: resume
   <p>It appears that you're on a mobile device. Please click "View Resume" below.</p>
 </div>
 
-
 <!-- Download Resume Link (Centered on both large and mobile screens) -->
 <div class="download-resume">
   <a href="/files/resume/palmerResume.pdf" target="_blank" class="download-link">Download Resume</a>
 </div>
-
 
 <!-- CSS STARTS HERE -->
 <style>
@@ -43,6 +41,21 @@ tags: resume
     .pdf-container embed {
       width: 100%;
       height: 80vh; /* Adjust this to your preferred height for the embedded PDF */
+    }
+
+    /* Hide the mobile fallback message on larger screens */
+    .pdf-view-message {
+      display: none;
+    }
+  }
+
+  /* Show the fallback message only for smaller screens */
+  @media (max-width: 767px) {
+    .pdf-view-message {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px;
     }
   }
 
@@ -72,6 +85,4 @@ tags: resume
     outline: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-
-
 </style>
