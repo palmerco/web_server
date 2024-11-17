@@ -18,7 +18,7 @@ tags: resume
 </div>
 
 <!-- Download Link for Both Screens -->
-<div class="download-link">
+<div class="button-container">
   <a href="/files/resume/palmerResume.pdf" target="_blank">Download Resume</a>
 </div>
 
@@ -89,4 +89,42 @@ tags: resume
       margin: 20px 0;
     }
   }
+
+/* Container for the button */
+.button-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Stylish Modern Button */
+.modern-button {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600; /* Bold for emphasis */
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db; /* Bright blue for the button */
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px; /* Rounded button edges */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  transition: all 0.3s ease; /* Smooth transition */
+  display: inline-block; /* Ensure it behaves like a button */
+}
+
+/* Button hover effect */
+.modern-button:hover {
+  background-color: #2980b9; /* Darker blue when hovered */
+  transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* Button focus effect for accessibility */
+.modern-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.8); /* Soft focus glow */
+}
+
+
+
+
 </style>
