@@ -5,175 +5,79 @@ permalink: /resume/
 tags: resume
 ---
 
-
-
-<!-- Button for Small Screens -->
-<div class="pdf-view-button">
-	<p>It appears that you're on a mobile device. Please click "View Resume" below. <p>
-    <a href="/files/resume/palmerResume.pdf" target="_blank" class="view-button">View Resume</a>
-</div>
-
 <!-- Embed for Large Screens -->
 <div class="pdf-container">
-
-    <embed
-      src="/files/resume/palmerResume.pdf#toolbar=0&navpanes=0"
-      type="application/pdf"
-      aria-label="Embedded PDF version of Cody's resume">
-      <p>Your browser does not support PDF viewing. <a href="/files/resume/palmerResume.pdf">Click here to download the resume.</a></p>
-    </embed>
-		
+  <embed src="/files/resume/palmerResume.pdf#toolbar=0&navpanes=0" type="application/pdf"
+    aria-label="Embedded PDF version of Cody's resume">
+  <p>Your browser does not support PDF viewing. <a href="/files/resume/palmerResume.pdf">Click here to download the
+      resume.</a></p>
+  </embed>
 </div>
 
-<!-- Download Button for Large Screens -->
-<div class="pdf-download-button">
-  <a href="/files/resume/palmerResume.pdf" target="_blank" class="download-button">Download Resume</a>
+<!-- Mobile Fallback for Viewing Resume -->
+<div class="pdf-view-message">
+  <p>It appears that you're on a mobile device. Please click "View Resume" below.</p>
+  <!-- View Resume Button for Mobile -->
+  <a href="/files/resume/palmerResume.pdf" target="_blank" class="mobile-view-resume-button">View Resume</a>
 </div>
 
-<!-- Styling -->
+
+
+
+
+<!-- CSS STARTS HERE -->
 <style>
-    /* Default: Hide the embed for smaller screens */
-    .pdf-container {
-        display: none;
-    }
+/* Default: Hide the embedded PDF for smaller screens */
+.pdf-container {
+  display: none;
+}
 
+/* Show the embedded PDF for larger screens */
+@media (min-width: 768px) {
+  .pdf-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Allow height to adjust based on content */
+  }
 
-    /* Show the embed for larger screens */
-    @media (min-width: 768px) {
-        .pdf-container {
-            display: block;
-            position: relative;
-            width: 100%;
-            height: 800px; /* Adjust height for better visibility */
-        }
+  .pdf-container embed {
+    width: 100%;
+    height: 80vh; /* Adjust this to your preferred height for the embedded PDF */
+  }
 
-        .pdf-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+  /* Hide the mobile message on larger screens */
+  .pdf-view-message {
+    display: none;
+  }
+}
 
-        /* Hide the button on larger screens */
-        .pdf-view-button {
-            display: none;
-        }
-    }
+/* Mobile Button Styling for "View Resume" */
+.mobile-view-resume-button {
+  display: none; /* Default to hide */
+  background-color: #6495ED; /* Blue background color */
+  color: white; /* White text */
+  padding: 12px 24px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
 
- /* Download Button Styling */
-        .pdf-download-button {
-            position: absolute;
-            bottom: 20px; /* 20px from the bottom */
-            left: 50%;
-            transform: translateX(-50%); /* Center the button */
-            text-align: center;
-            width: 100%;
-        }
+/* Show the button only on mobile */
+@media (max-width: 767px) {
+  .mobile-view-resume-button {
+    display: inline-block; /* Show the button on mobile */
+  }
 
-        .download-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #ffffff; /* White text */
-            background-color: #000000; /* Black background */
-            text-decoration: none;
-            border-radius: 5px;
-            border: none; /* Remove border */
-            text-align: center;
-            margin: 20px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
+  .mobile-view-resume-button:hover {
+    background-color: #4169E1; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Slightly deeper shadow on hover */
+  }
+}
 
-        .download-button:hover {
-            background-color: #333333; /* Darker shade of black on hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
-        }
-    }
-
-
-	 
-   /* Button Styling for Smaller Screens */
-    .view-button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #ffffff; /* White text */
-        background-color: #000000; /* Black background */
-        text-decoration: none;
-        border-radius: 5px;
-        border: none; /* Remove border */
-        text-align: center;
-        margin: 20px auto;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    }
-
-    .view-button:hover {
-        background-color: #333333; /* Darker shade of black on hover */
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
-    }
-
-    /* Remove the blue stripe (outline) when button is clicked or focused */
-    .view-button:focus, .view-button:active {
-        outline: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Keep a subtle shadow when active/focused */
-    }
-
-    /* Center the button */
-    .pdf-view-button {
-        text-align: center;
-    }
 </style>
-
-
-  
-  
-<!-- <iframe src="/files/resume/palmerResume.pdf" width="100%" height="800" frameBorder="0"> </iframe> -->
-
-
-
-<!--
-
-<div class="py2">
-  {% if site.ajaxify_contact_form %}
-    <form class="form-stacked">
-      <label>
-        Email
-        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Email Address" }}">
-      </label>
-
-      <label>
-        Content
-        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "What would you like to say?" }}" style="resize: vertical"></textarea>
-      </label>
-
-      <input type="text" name="_gotcha" style="display:none" />
-
-      <button type='submit' class="button button-blue button-big mobile-block">{{ site.text.contact.submit | default: "Say Hello" }}</button>
-    </form>
-  {% else %}
-    <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
-      <label>
-        Email
-        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Email Address" }}">
-      </label>
-      <label>
-        Content
-        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "What would you like to say?" }}" style="resize: vertical"></textarea>
-      </label>
-
-      <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
-      <input type="hidden" name="_subject" value="{{ site.text.contact.subject | default: "New submission!" }}" />
-      <input type="text" name="_gotcha" style="display:none" />
-
-      <input type="submit" class="button button-blue button-big mobile-block" value="{{ site.text.contact.submit | default: "Say Hello" }}">
-    </form>
-  {% endif %}
-</div>
-{% if site.ajaxify_contact_form %}
-  {% include ajaxify_content_form.html %}
-{% endif %}
-
-
-
-->
