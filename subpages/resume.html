@@ -5,8 +5,24 @@ permalink: /resume/
 tags: resume
 ---
 
-<p>Click <a href="/files/resume/palmerResume.pdf">Here</a> to download Cody's resume 
 
+
+
+---
+layout: page
+title: Resume
+permalink: /resume/
+tags: resume
+---
+
+<p>Download or view Cody's <a href="/files/resume/palmerResume.pdf" target="_blank">Resume (PDF)</a>.</p>
+
+<!-- Button for Small Screens -->
+<div class="pdf-view-button">
+    <a href="/files/resume/palmerResume.pdf" target="_blank" class="view-button">View Resume</a>
+</div>
+
+<!-- Embed for Large Screens -->
 <div class="pdf-container">
     <embed
       src="/files/resume/palmerResume.pdf#toolbar=0&navpanes=0"
@@ -16,21 +32,54 @@ tags: resume
     </embed>
 </div>
 
+<!-- Styling -->
 <style>
+    /* Default: Hide the embed for smaller screens */
     .pdf-container {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 75%; /* Adjust as needed for aspect ratio */
+        display: none;
     }
-    .pdf-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+
+    /* Show the embed for larger screens */
+    @media (min-width: 768px) {
+        .pdf-container {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 800px; /* Adjust height for better visibility */
+        }
+
+        .pdf-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Hide the button on larger screens */
+        .pdf-view-button {
+            display: none;
+        }
+    }
+
+    /* Button Styling for Smaller Screens */
+    .view-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #708090; /* Slate Gray */
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .view-button:hover {
+        background-color: #556677; /* Darker Slate Gray */
     }
 </style>
+
 
   
   
