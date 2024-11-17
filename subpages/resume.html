@@ -7,23 +7,16 @@ tags: resume
 
 
 
-
----
-layout: page
-title: Resume
-permalink: /resume/
-tags: resume
----
-
-<p>Download or view Cody's <a href="/files/resume/palmerResume.pdf" target="_blank">Resume (PDF)</a>.</p>
-
 <!-- Button for Small Screens -->
 <div class="pdf-view-button">
+	<p>It appears that you're on a mobile device. Please click "View Resume" below
     <a href="/files/resume/palmerResume.pdf" target="_blank" class="view-button">View Resume</a>
 </div>
 
 <!-- Embed for Large Screens -->
 <div class="pdf-container">
+
+	<p>Download Cody's <a href="/files/resume/palmerResume.pdf" target="_blank">Resume (.pdf)</a></p>
     <embed
       src="/files/resume/palmerResume.pdf#toolbar=0&navpanes=0"
       type="application/pdf"
@@ -62,22 +55,31 @@ tags: resume
         }
     }
 
-    /* Button Styling for Smaller Screens */
-    .view-button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #ffffff;
-        background-color: #708090; /* Slate Gray */
-        text-decoration: none;
-        border-radius: 5px;
-        text-align: center;
-        margin: 20px auto;
-    }
 
-    .view-button:hover {
-        background-color: #556677; /* Darker Slate Gray */
-    }
+	 /* Button Styling for Smaller Screens */
+		.view-button {
+			display: inline-block;
+			padding: 10px 20px;
+			font-size: 16px;
+			color: #ffffff; /* White text */
+			background-color: #000000; /* Black background */
+			text-decoration: none;
+			border-radius: 5px;
+			border: none; /* Remove border */
+			text-align: center;
+			margin: 20px auto;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+		}
+
+		.view-button:hover {
+			background-color: #333333; /* Darker shade of black on hover */
+			box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+		}
+
+		/* Center the button */
+		.pdf-view-button {
+			text-align: center;
+		}
 </style>
 
 
