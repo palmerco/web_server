@@ -1,0 +1,209 @@
+---
+layout: post
+title: "Building a MATLAB GUI to Automate Simulink Testing"
+date: 2026-02-28
+categories: engineering
+---
+
+<style>
+  .post-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1.25rem 0 2.5rem 0;
+  }
+  .post-tag {
+    background: #f1f3f4;
+    color: #3c4043;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .3rem .75rem;
+    border-radius: 2rem;
+  }
+  .pull-quote {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #202124;
+    border-left: 3px solid #1a73e8;
+    padding: .75rem 1.25rem;
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+  .screenshot-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    margin: 1.75rem 0 .5rem 0;
+  }
+  .screenshot-wrap img {
+    width: 100%;
+    display: block;
+  }
+  .screenshot-wrap img.crop-top {
+    margin-top: -2%;
+    margin-bottom: -15%;
+  }
+  .screenshot-wrap img.crop-center {
+    margin-top: -8%;
+    margin-bottom: -8%;
+  }
+  .screenshot-caption {
+    text-align: center;
+    font-size: .8rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  .feature-list li {
+    padding: .9rem 1rem .9rem 1.1rem;
+    margin-bottom: .6rem;
+    border-left: 3px solid #1a73e8;
+    background: #f8f9fe;
+    border-radius: 0 6px 6px 0;
+  }
+  .feature-title {
+    display: block;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: .95rem;
+    color: #202124;
+    margin-bottom: .25rem;
+  }
+  .feature-desc {
+    display: block;
+    font-size: .9rem;
+    color: #555;
+    line-height: 1.55;
+  }
+  .interview-q {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.05rem;
+    color: #1a73e8;
+    margin: 2.25rem 0 .6rem 0;
+  }
+</style>
+
+<div class="post-tag-row">
+  <span class="post-tag">MATLAB</span>
+  <span class="post-tag">App Designer</span>
+  <span class="post-tag">Simulink</span>
+  <span class="post-tag">OOP</span>
+  <span class="post-tag">Test Automation</span>
+  <span class="post-tag">MIL Testing</span>
+</div>
+
+<p>
+  What engineer doesn't love optimization? For me, I knew it was time for a smarter way to test Simulink models - something flexible, minimal, and actually enjoyable to use. So I built it, and here's my story.
+</p>
+
+<div class="screenshot-wrap">
+  <img src="/files/images/02-28-2026 MIL GUI/MIL_GUI_Screenshot.jpg" alt="MIL GUI Main Interface"/>
+</div>
+<p class="screenshot-caption">The MATLAB App Designer GUI.</p>
+
+<p class="interview-q">Where did the idea come from?</p>
+
+<p>
+  It started with collecting vehicle data. I was recording XCP signals within CANape and was curious if I could push that real data through our Simulink models to validate our logic. Rather than piecing it together manually every time, I built a test harness to do it programmatically - and that became the foundation for everything.
+</p>
+<p>
+  From there, the scope grew. I wanted to create synthetic but real-world test cases quickly, and MATLAB's Signal Builder wasn't cutting it. Our models are vastly different from one another - different data types, dimensions, naming conventions, data rates, you name it. I needed something flexible enough to handle all of it.
+</p>
+
+<p class="interview-q">So what does it actually do?</p>
+
+<ul class="feature-list">
+  <li>
+    <span class="feature-title">Programmatically Generate Model Test Harness</span>
+    <span class="feature-desc">Point the GUI at any Simulink SWC and it automatically builds a test harness around it - wiring up all IO signals without any manual setup.</span>
+  </li>
+  <li>
+    <span class="feature-title">Test Case Creation</span>
+    <span class="feature-desc">Quickly spin up named test cases with configurable stop time and step size. Build a new test on top of a previous one and keep your momentum.</span>
+  </li>
+  <li>
+    <span class="feature-title">Signal & Calibration Management</span>
+    <span class="feature-desc">Browse and search all IO signals and calibrations from your model in one place, with dimension and data type info at a glance.</span>
+  </li>
+  <li>
+    <span class="feature-title">Input Shaping</span>
+    <span class="feature-desc">Define Step and Ramp inputs per signal with configurable magnitude, start time, and stop time - all from a clean interface.</span>
+  </li>
+  <li>
+    <span class="feature-title">Programmatic Simulation</span>
+    <span class="feature-desc">Run simulations behind the scenes with full control over time step and duration. No need to manually interact with Simulink.</span>
+  </li>
+  <li>
+    <span class="feature-title">Live Plot Output</span>
+    <span class="feature-desc">Visualize signal behavior directly in the GUI with configurable plot and downsample settings.</span>
+  </li>
+  <li>
+    <span class="feature-title">Test Suite Storage & Loading</span>
+    <span class="feature-desc">Group multiple test case objects into a test suite that can be saved and loaded back in. Build up a library of tests over time and reload them instantly.</span>
+  </li>
+</ul>
+
+
+<p class="interview-q">How much time does it actually save?</p>
+
+<p>
+  Quite a bit, honestly. Building a test harness by hand is tedious work - you're manually wiring up signals, configuring blocks, and hoping nothing breaks when the model changes. The GUI handles all of that automatically. What used to take a significant chunk of time is now done in seconds.
+</p>
+<p>
+  The ability to build tests on top of each other is another big one. Instead of recreating a test case from scratch every time, you start from something that already works and iterate. That alone changes how fast you can move through a test cycle.
+</p>
+<p>
+  And then there's the test suite workflow. Once you've built up a set of test cases, you can store them and load them back in at any time - results and all. You're not starting over every session. You pick up exactly where you left off.
+</p>
+
+<p class="interview-q">What was the hardest part to build?</p>
+
+<p>
+  GUI architecture. I spent several weeks figuring out the best way to pass data between test objects and the GUI application - always keeping the user experience in mind.
+</p>
+<p>
+  Eventually I landed on a data structure that is modular enough to work across all of our different software components, but still structured enough to be pushed through all of the GUI features cleanly. That took a lot of iteration to get there.
+</p>
+<p>
+  Bonus annoyance: enumeration datatypes. They use characters to represent data, which made integrating them into the GUI a special kind of painful - error checking, dropdowns, table formatting, you name it. Every feature that touched an enum had to be handled separately. Not fun, but it's in there.
+</p>
+
+<p class="interview-q">Did you use AI to build it?</p>
+
+<p>
+  Not really, and that's something I'm actually proud of. I built it before the AI boom, but it has seen several AI advancements in the recent year.
+</p>
+
+<p class="interview-q">Who else uses it?</p>
+
+<p>
+  Me and one coworker. He's become the best kind of user -opinionated, vocal, and genuinely invested in it getting better. He gives feedback, I build the next thing, repeat. That loop has driven a lot of the tool's best improvements.
+</p>
+
+<p class="interview-q">What would you add with unlimited time?</p>
+
+<p>
+  I would iron out a lot of the quirks with path dependency and persistency. I'd also write some documentation - a real guide for any engineer who picks up the tool at a later date.
+</p>
+<p>
+  Feature wise, I think it would be cool to have automatic pass/fail criteria for test cases that can generate test reports. And potentially leverage AI generated test cases on top of that.
+</p>
+
+<p class="interview-q">Final thoughts?</p>
+
+<p>
+  GUIs make life easier - that's kind of the whole point. But there's something extra satisfying about building one that your coworkers actually reach for on their own. Build the tool you wish existed. Somebody has to.
+</p>
+
+<p><br><br><br><br></p>
