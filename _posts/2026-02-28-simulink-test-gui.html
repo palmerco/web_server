@@ -104,24 +104,25 @@ categories: engineering
 </div>
 
 <p>
-  What engineer doesn't love optimization? For me, I knew it was time for a smarter way to test Simulink models - something flexible, minimal, and actually enjoyable to use. So I built it, and here's my story.
+  Manual Simulink testing is slow and boring, so I built a GUI to automate it.
 </p>
 
 <div class="screenshot-wrap">
-  <img src="/files/images/02-28-2026 MIL GUI/MIL_GUI_Screenshot.jpg" alt="MIL GUI Main Interface"/>
+  <img src="/files/images/02-28-2026 MIL GUI/MIL_GUI.jpeg" alt="MIL GUI Main Interface"/>
 </div>
 <p class="screenshot-caption">The MATLAB App Designer GUI.</p>
 
 <p class="interview-q">Where did the idea come from?</p>
 
 <p>
-  It started with collecting vehicle data. I was recording XCP signals within CANape and was curious if I could push that real data through our Simulink models to validate our logic. Rather than piecing it together manually every time, I built a test harness to do it programmatically - and that became the foundation for everything.
-</p>
-<p>
-  From there, the scope grew. I wanted to create synthetic but real-world test cases quickly, and MATLAB's Signal Builder wasn't cutting it. Our models are vastly different from one another - different data types, dimensions, naming conventions, data rates, you name it. I needed something flexible enough to handle all of it.
+  The idea came to me when we were root causing a tough bug in one of our software components. I thought it would be useful to collect vehicle data with XCP/CANape and replay it back through the model. To do that, I needed a test harness, and I wanted to write one generic enough to work across any SWC.
 </p>
 
 <p class="interview-q">So what does it actually do?</p>
+
+<p>
+  This tool offers a full testing environment for Simulink models. You can generate a test harness, build synthetic signals, modify calibrations, manage test cases, and run simulations all from one place. Here's a feature breakdown:
+</p>
 
 <ul class="feature-list">
   <li>
@@ -130,7 +131,7 @@ categories: engineering
   </li>
   <li>
     <span class="feature-title">Test Case Creation</span>
-    <span class="feature-desc">Quickly spin up named test cases with configurable stop time and step size. Build a new test on top of a previous one and keep your momentum.</span>
+    <span class="feature-desc">Create test case objects with configurable stop time and step size. Each test case object houses the synthetic signals you create for simulation inputs, customizable calibration data, and simulation output results. You can build new tests on top of existing tests to increase test coverage and reusability.</span>
   </li>
   <li>
     <span class="feature-title">Signal & Calibration Management</span>
