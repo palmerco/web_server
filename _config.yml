@@ -5,10 +5,11 @@ author:      Cody Palmer
 highlighter: rouge
 description: "Creative platform for sharing ideas and growing professionally."
 baseurl:     ""
-url:         "http://github-palmerco.github.io"
+url:         "https://github-palmerco.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
  - subpages/about.html
+ - subpages/posts.html
  - subpages/resume.html
 
 

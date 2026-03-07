@@ -1,40 +1,87 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 tags: about
 ---
 
-
-<!--<img src="/images/websitePhoto.jpg" alt="profilePicture" width="300" align="left" style="margin:0px 15px"/>-->
-
-<img src="/files/images/websitePhoto.jpg" alt="profilePicture" style="width: 100%; max-width: 750px; margin: 0 auto 1rem auto; border: none; display: block;"/>
-
-<p>I'm Cody - welcome to my personal website. I'm a full-time learner, which happens to support my engineering career. I like understanding how systems work, picking apart problems, and building things that actually do something useful. Programming, computers, controls - I'm interested in all of it.</p>
-
 <style>
-    .verse-block {
-        border-left: 3px solid #C2622D;
-        padding: .6rem 1.25rem;
-        margin: 4.5rem 0 2rem 0;
+  .about-hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0 2rem;
+  }
+  .about-left {
+    flex: 1 1 40%;
+  }
+  .about-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin: 0 0 0.5rem;
+    font-family: Lato, 'Helvetica Neue', sans-serif;
+    color: #222;
+  }
+  .about-accent {
+    width: 3rem;
+    height: 3px;
+    background: #C2622D;
+    margin-bottom: 1.5rem;
+  }
+  .about-lead {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: Lato, 'Helvetica Neue', sans-serif;
+    line-height: 1.4;
+  }
+  .about-body {
+    color: #555;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  .about-right {
+    flex: 1 1 50%;
+  }
+  .about-right img {
+    width: 100%;
+    min-width: 280px;
+    border: none;
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .about-hero {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
     }
-    .verse-text {
-        font-style: italic;
-        color: #888;
-        font-size: .85rem;
-        margin: 0 0 .3rem 0;
-        line-height: 1.6;
+    .about-heading {
+      font-size: 2.5rem;
     }
-    .verse-cite {
-        font-size: .75rem;
-        color: #bbb;
-        font-style: normal;
-    }
+  }
+  .subtle-ref {
+    margin-top: 4rem;
+    font-size: .75rem;
+    color: #ccc;
+    text-align: right;
+  }
 </style>
 
-<div class="verse-block">
-    <p class="verse-text">You will keep in perfect peace those whose minds are steadfast, because they trust in you.</p>
-    <span class="verse-cite">Isaiah 26:3</span>
+<div class="about-hero">
+  <div class="about-left">
+    <h1 class="about-heading">ABOUT.</h1>
+    <div class="about-accent"></div>
+    <p class="about-lead">Always learning. Always building.</p>
+    <p class="about-body">I'm Cody, a lead systems engineer who spends most of his time deep in control algorithms.</p>
+    <p class="about-body">I'm fascinated by how systems work. I love breaking apart difficult problems and finding the best solution. I'm a people person, and often gravitate towards those who challenge me and are eager to grow.</p>
+    <p class="about-body">This site is where I share tidbits of what I'm working on, thinking about, and learning along the way. You can check out my posts, resume, or connect with me by clicking any of the links below.</p>
+
+  </div>
+  <div class="about-right">
+    <img src="/files/images/websitePhoto.jpg" alt="Cody Palmer" />
+  </div>
 </div>
 
-
+<p class="subtle-ref">Isaiah 26:3</p>
