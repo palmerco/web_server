@@ -64,8 +64,36 @@ tags: about
   .subtle-ref {
     margin-top: 4rem;
     font-size: .75rem;
-    color: #ccc;
     text-align: right;
+  }
+  .verse-tooltip {
+    position: relative;
+    color: #ccc;
+    cursor: default;
+    display: inline-block;
+  }
+  .verse-tooltip::before {
+    content: "You will keep in perfect peace those whose minds are steadfast, because they trust in you.";
+    position: absolute;
+    bottom: 1.4rem;
+    right: 0;
+    width: 18rem;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+    font-size: .75rem;
+    color: #888;
+    line-height: 1.6;
+    font-style: italic;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    text-align: left;
+  }
+  .verse-tooltip:hover::before {
+    opacity: 1;
   }
 </style>
 
@@ -84,4 +112,4 @@ tags: about
   </div>
 </div>
 
-<p class="subtle-ref">Isaiah 26:3</p>
+<p class="subtle-ref"><span class="verse-tooltip">Isaiah 26:3</span></p>
